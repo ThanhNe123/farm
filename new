@@ -1,4 +1,24 @@
-script_key="ObPuikaekjOuPCYNBRfyFFAudtPFAAoV";
+local keys = {  -- Add as many key
+    "UNzNVITEWRkrVZhFWYHsRpGVOkNcqZfS", 
+    "IDTVnUkzgNgIYjkvBxsSITZHUdNigWaO",
+    "aifNofPTSylkKoACyWDGSveZuXKnLvss", 
+    "hlnpuNGqsoWtvvoRCugHWmnNLPEdzEku",
+    "gFvREdolUGzEoqFtVEDYjtjpxAHpxHVu",
+    "HVqmRLKRyGdPQVmcCTlJCzXBzpUjTJwg", 
+    "PdOwsYWjHazIemAlMIPSGoBMFPLEQLVh",
+    "jZWmmcTwkYfnBERACFTHHyJTUPggmqpM", 
+    "dWBmZhWhZRwqchQlwdkcMOpKIkBaBBKC",
+    "BBwbZqktvccUPcFcMAMTWgsxbzQJGqYu", 
+    "CqGXZMIOgmrZZMnGNmqIuEdMBLSZWdyV",
+    "FNFsMYMPvcPqTFdPAqlvqlwkLOBJrAEt", 
+    "axaDxmMeQURSmYZBdgxuhNlXhVwFlBNQ",
+    "UpxIKJsripJOrcakaPTVPNUkfIFyOwJE",
+    "ewLPhgciZKawyXdgBuZBUgWzvJlfMfJR",
+    "sCzeqbPqPGtuUVrClkEFGjBPxNcgeKSU",
+    "TvUsrjKljNSfMTqWJYaDvIZOILDGzoTA",
+}
+math.randomseed(os.time())
+script_key = keys[math.random(#keys)];
 setfpscap(2)
 getgenv().pvbConfig = {
     AUTO_UPDATE_RESTART = true,
