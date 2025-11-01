@@ -29,24 +29,25 @@ getgenv().pvbConfig = {
     FROST_GRENADE_TARGET_MAX_HP = 100000,  -- Use frost grenade 100k+ hp brainrot
     CONSUME_POTION_EVENT = {"Frozen", "Golden", "Rainbow", "Galactic", "Underworld", "UpsideDown", "Volcano"},
     PLANT_SECRET_LIMITED_SEED_EVENT = {"Frozen", "Golden", "Rainbow", "Galactic", "Underworld", "UpsideDown", "Volcano"},
+    BUY_EVENT_SHOP = {"Halloween Card Pack", "Candy Brainrot Crate", "Candy Spooky Crate"},
     
     OPEN_LUCKY_EGG = {"Godly Lucky Egg", "Secret Lucky Egg", "Meme Lucky Egg"},
-    OPEN_CARD_PACK = {"Base", "Shiny Base"},
+    OPEN_CARD_PACK = {"Base", "Shiny Base", "Halloween"},
     MERGE_CARD_RARITY = {"Common", "Uncommon", "Rare", "Epic", "Legendary"},
     USE_PLANT_EXTRACTOR_RARITY = {"Common", "Uncommon", "Rare", "Epic", "Legendary"},
     FUSE_PLANT = {"Watermelon", "Eggplant", "Dragon Fruit", "Sunflower", "Pumpkin"},  -- Auto keep (favorite) & fuse required plant + brainrot
 
-    BUY_SEED_SHOP = {"King Limone", "Mango", "Mr Carrot", "Tomatrio", "Shroombino"},
+    BUY_SEED_SHOP = {"Mr Carrot", "Tomatrio", "Shroombino", "Mango", "King Limone"},
     BUY_GEAR_SHOP = {"Frost Grenade", "Frost Blower"},
 
     -- Keep = Favorite (Prevent sell)
     KEEP_SEED = {},  -- Plant Names
     KEEP_PLANT_RARITY = {"Secret", "Limited"},
-    KEEP_BRAINROT_MONEY_PER_SECOND = 70000,  -- 20000 means keep $20+k/s brainrot
+    KEEP_BRAINROT_MONEY_PER_SECOND = 100000,  -- 20000 means keep $20+k/s brainrot
     KEEP_BRAINROT_RARITY = {}, 
 
     SELL_BRAINROT_DELAY = 10,  -- Delay for "sell all" brainrot
-    SELL_PLANT_DELAY = 20,  -- "Delay for "sell all" plant
+    SELL_PLANT_DELAY = 30,  -- "Delay for "sell all" plant
 
     -- Webhook
     BRAINROT_WEBHOOK_URL = "",
@@ -67,4 +68,5 @@ getgenv().pvbConfig = {
     GIFT_PLANT_DAMAGE = 100000,  -- 100k+ Damage -> Gift
     GIFTING_COOLDOWN = 5,
 }
+
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/1955a9eeb0a6b663051651121e75f7f7.lua"))()
