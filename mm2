@@ -1,0 +1,27 @@
+script_key = "noKvevyLGKdqmBsdJpiFFWFQglxIcndA"
+getgenv().Config = {
+    FARM_MODE = "BattlePass", -- BattlePass / Crate
+    AUTO_RESTART_WHEN_UPDATE = true,
+    REJOIN_WHEN_STUCK_LOADING_AFTER = 300, -- Customize if u find it too fast, depending on your network
+    DESTROY_PROMPT_GUI_DISPLAY_SERVER_FULL = true,
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1008697546060865556/MWZSHknTC-fR-BJ91l8IE3EhcfgXydv97Qi6eXS5Z2_oZYEsNbWxEUp00pvX-cUyO6-q",
+    WEBHOOK_NOTE = "CC"
+}
+
+-- No edits
+task.spawn(function()
+    local LastCheck = tick()
+    while task.wait() do
+        if getgenv().ScriptLoaded then
+            break
+        end
+
+        pcall(function()
+            if LastCheck + 180 <= tick() then
+                game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
+            end
+        end)
+    end
+end)
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/8e7c89050d8f703ed98b1f594b515d22.lua"))()
