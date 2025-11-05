@@ -1,3 +1,4 @@
+setfpscap(3)
 script_key = "noKvevyLGKdqmBsdJpiFFWFQglxIcndA"
 getgenv().Config = {
     FARM_MODE = "BattlePass", -- BattlePass / Crate
