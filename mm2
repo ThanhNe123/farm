@@ -1,7 +1,7 @@
 setfpscap(3)
 script_key = "noKvevyLGKdqmBsdJpiFFWFQglxIcndA"
 getgenv().Config = {
-    FARM_MODE = "Crate", -- BattlePass / Crate
+    FARM_MODE = "BattlePass", -- BattlePass / Crate
     AUTO_RESTART_WHEN_UPDATE = true,
     REJOIN_WHEN_STUCK_LOADING_AFTER = 300, -- Customize if u find it too fast, depending on your network
     DESTROY_PROMPT_GUI_DISPLAY_SERVER_FULL = true,
